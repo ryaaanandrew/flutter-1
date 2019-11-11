@@ -9,12 +9,26 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Herro World appbar'),
+        title: Text('Flutter App'),
         centerTitle: true,
         backgroundColor: Colors.red,
       ),
       body: Row(
-        children: <Widget>[],
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Text('Hello World'),
+          FlatButton(
+            onPressed: () {},
+            color: Colors.amber,
+            child: Text('Click me'),
+          ),
+          Container(
+            color: Colors.cyan,
+            padding: EdgeInsets.all(30.0),
+            child: Text('Inside Container'),
+          )
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
