@@ -9,13 +9,12 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Herro World'),
+        title: Text('Herro World appbar'),
         centerTitle: true,
         backgroundColor: Colors.red,
       ),
-      body: Padding(
-        padding: EdgeInsets.all(90.00),
-        child: Text('Hello World'),
+      body: Row(
+        children: <Widget>[],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
